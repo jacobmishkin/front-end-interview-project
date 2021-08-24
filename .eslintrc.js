@@ -18,6 +18,7 @@ module.exports = {
   rules: {
     'no-debugger': 0,
     'no-alert': 0,
+    'react/jsx-props-no-spreading': 'off',
     'no-await-in-loop': 0,
     'no-return-assign': ['error', 'except-parens'],
     'no-restricted-syntax': [
