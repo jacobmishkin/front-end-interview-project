@@ -1,0 +1,5 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mailTitle mailDesc">
+<title id="mailTitle">the Icon for email</title>
+<desc id="mailDesc">Email us about how you love wine</desc>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.40659 0 0 5.40659 0 12C0 18.5934 5.40659 24 12 24C18.5934 24 24 18.5934 24 12C24 5.40659 18.5934 0 12 0ZM18.5275 7.38462L12 13.3846L5.47253 7.38462H18.5275ZM9.42857 11.9341L4.94506 7.84615V16.2198L9.42857 11.9341ZM5.47253 16.6154L9.93688 12.3956L11.8026 14.1099C11.8692 14.1758 11.9358 14.1758 12.0025 14.1758C12.0691 14.1758 12.1357 14.1758 12.2024 14.1099L14.0681 12.3956L18.5324 16.6154H5.47253ZM14.5714 11.933L19.0549 16.2187V7.84506L14.5714 11.933Z" fill="white"/>
+</svg>
