@@ -1,0 +1,7 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="hamburgerTitle hamburgerDesc" role="navigation">
+  <title id="hamburgerTitle">the Icon for the Mobile Nav</title>
+  <desc id="hamburgerDesc">A Icon to press to access the navigation on phones or small devices</desc>
+  <path d="M16 29.5H32" stroke="white" stroke-linecap="round"/>
+  <path d="M16 23.5H32" stroke="white" stroke-linecap="round"/>
+	<path d="M16 17.5H32" stroke="white" stroke-linecap="round"/>
+</svg>
