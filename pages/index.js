@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 const Index = () => (
@@ -14,6 +15,7 @@ const Index = () => (
         Please take a look at the README before staring and feel free to reach
         out with any questions or concerns!
       </p>
+      <Footer />
     </main>
   </div>
 );
