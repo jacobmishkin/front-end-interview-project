@@ -1,5 +1,8 @@
 // next.config.js
 module.exports = {
+  images: {
+    domains: ['https://d3lbhvavid9616.cloudfront.net'],
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
