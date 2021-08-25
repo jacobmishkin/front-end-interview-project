@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import Products from '../components/Products';
 
 const Index = () => (
   <div>
@@ -11,10 +12,7 @@ const Index = () => (
     </Head>
     <main>
       <Header />
-      <p>
-        Please take a look at the README before staring and feel free to reach
-        out with any questions or concerns!
-      </p>
+      <Products />
       <Footer />
     </main>
   </div>
