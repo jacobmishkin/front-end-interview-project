@@ -9,17 +9,16 @@ import useViewport from './GlobalStyles/Utils/useViewport';
 const StyledHeader = styled.header`
   background: black;
   color: white;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
-
+  align-items: center;
   h1 {
     margin: 0;
-    margin-bottom: 19px;
   }
 
   @media ${device.laptop} {
-    align-items: center;
+    justify-content: center;
     padding-top: 0;
 
     span {
@@ -28,13 +27,27 @@ const StyledHeader = styled.header`
 
     h1 {
       margin-bottom: 0;
+      flex: 1;
+      text-align: center;
     }
+  }
+`;
+
+const DesktopButtons = styled.div`
+  @media ${device.laptop} {
+    margin-left: auto;
+    flex: 1;
   }
 `;
 
 const BasketContainer = styled.div`
   margin-top: 15px;
-  margin-right: 16px;
+  padding-right: 15px;
+  @media ${device.laptop} {
+    margin-right: auto;
+    text-align: right;
+    flex: 1;
+  }
 `;
 
 const Header = () => {
@@ -45,10 +58,10 @@ const Header = () => {
       <StyledHeader>
         {viewport.width >= parseInt(size.laptop) ? (
           <>
-            <div>
+            <DesktopButtons>
               <span>Stories</span>
               <span>Contact Us</span>
-            </div>
+            </DesktopButtons>
           </>
         ) : (
           <Hamburger />
