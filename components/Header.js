@@ -3,6 +3,7 @@ import Hamburger from '../public/hamburger.svg';
 import Basket from '../public/basket.svg';
 import Logo from '../public/logo.svg';
 import { size } from './GlobalStyles/Utils/size';
+import { device } from './GlobalStyles/Utils/device';
 import useViewport from './GlobalStyles/Utils/useViewport';
 
 const StyledHeader = styled.header`
@@ -15,6 +16,16 @@ const StyledHeader = styled.header`
   h1 {
     margin: 0;
     margin-bottom: 19px;
+  }
+  @media ${device.laptop} {
+    align-items: center;
+    padding-top: 0;
+    span {
+      margin-left: 25px;
+    }
+    h1 {
+      margin-bottom: 0;
+    }
   }
 `;
 
@@ -30,7 +41,12 @@ const Header = () => {
     <>
       <StyledHeader>
         {viewport.width >= parseInt(size.laptop) ? (
-          <div>well hello there</div>
+          <>
+            <div>
+              <span>Stories</span>
+              <span>Contact Us</span>
+            </div>
+          </>
         ) : (
           <Hamburger />
         )}
