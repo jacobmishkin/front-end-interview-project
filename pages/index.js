@@ -1,7 +1,12 @@
 import Head from 'next/head';
+import styled from 'styled-components';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Products from '../components/Products';
+
+const Container = styled.div`
+  margin: 0 16px 0 16px;
+`;
 
 const Index = () => (
   <div>
@@ -12,7 +17,9 @@ const Index = () => (
     </Head>
     <main>
       <Header />
-      <Products />
+      <Container>
+        <Products />
+      </Container>
       <Footer />
     </main>
   </div>

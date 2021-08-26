@@ -3,7 +3,7 @@ import Hamburger from '../public/hamburger.svg';
 import Basket from '../public/basket.svg';
 import Logo from '../public/logo.svg';
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
   background: black;
   color: white;
   display: flex;
