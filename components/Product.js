@@ -7,6 +7,7 @@ const ListItem = styled.div`
   flex-direction: column;
   text-align: left;
   margin-top: 16px;
+  cursor: pointer;
 `;
 
 const Product = ({ data, data: { assets } }) => {
