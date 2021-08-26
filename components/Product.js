@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { device } from './GlobalStyles/Utils/device';
+import PropTypes from 'prop-types';
 import Image from './Image';
 
 const ListItem = styled.div`
@@ -10,6 +10,7 @@ const ListItem = styled.div`
 `;
 
 const Product = ({ data, data: { assets } }) => {
+  // Ran into issues with loader for Next. js created a custom image component
   const url = assets.map((image) => image.url);
 
   return (
@@ -22,6 +23,10 @@ const Product = ({ data, data: { assets } }) => {
       </div>
     </ListItem>
   );
+};
+
+Product.propTypes = {
+  data: PropTypes.string,
 };
 
 export default Product;

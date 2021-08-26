@@ -1,6 +1,6 @@
-import useSWR from 'swr';
 import styled from 'styled-components';
 import Product from './Product';
+import useData from './useData';
 
 const Center = styled.div`
   text-align: center;
@@ -19,16 +19,11 @@ const ListInfo = styled.div`
   }
 `;
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
-
 export default function Page() {
-  const { data, error } = useSWR(
-    'https://api.foxtrotchicago.com/v5/inventory/aisles/224/items?store_id=6',
-    fetcher
-  );
+  const { data, isLoading, isError } = useData();
 
-  if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
+  if (isError) return <div>failed to load</div>;
+  if (isLoading) return <div>loading...</div>;
 
   return (
     <>
