@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import Hamburger from '../public/hamburger.svg';
 import Basket from '../public/basket.svg';
 import Logo from '../public/logo.svg';
+import { size } from './GlobalStyles/Utils/size';
+import useViewport from './GlobalStyles/Utils/useViewport';
 
 const StyledHeader = styled.header`
   background: black;
@@ -21,18 +23,27 @@ const BasketContainer = styled.div`
   margin-right: 16px;
 `;
 
-const Header = () => (
-  <>
-    <StyledHeader>
-      <Hamburger />
-      <h1>
-        <Logo />
-      </h1>
-      <BasketContainer>
-        <Basket />
-      </BasketContainer>
-    </StyledHeader>
-  </>
-);
+const Header = () => {
+  const viewport = useViewport();
+
+  return (
+    <>
+      <StyledHeader>
+        {viewport.width >= parseInt(size.laptop) ? (
+          <div>well hello there</div>
+        ) : (
+          <Hamburger />
+        )}
+
+        <h1>
+          <Logo />
+        </h1>
+        <BasketContainer>
+          <Basket />
+        </BasketContainer>
+      </StyledHeader>
+    </>
+  );
+};
 
 export default Header;
