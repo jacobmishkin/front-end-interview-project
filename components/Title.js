@@ -22,9 +22,14 @@ const Wrapper = styled.div`
       line-height: 24px;
       font-weight: 400;
       margin: 0;
+      color: #121212;
     }
     h2 {
       margin-bottom: 0;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 48px;
+      color: #121212;
     }
   }
 `;

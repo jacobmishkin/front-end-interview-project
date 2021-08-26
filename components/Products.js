@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Product from './Product';
 import useData from './useData';
+import { device } from './GlobalStyles/Utils/device';
 
 const Center = styled.div`
   text-align: center;
@@ -8,6 +9,9 @@ const Center = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
   grid-gap: 7px;
+  @media ${device.laptop} {
+    grid-gap: 23px;
+  }
 `;
 const ListInfo = styled.div`
   padding-top: 32px;
