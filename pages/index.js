@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Products from '../components/Products';
 import { device } from '../components/GlobalStyles/Utils/device';
+import Title from '../components/Title';
 
 const Container = styled.div`
   margin: 0 16px 0 16px;
@@ -22,6 +23,7 @@ const Index = () => (
     </Head>
     <main>
       <Header />
+      <Title />
       <Container>
         <Products />
       </Container>

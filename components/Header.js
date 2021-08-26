@@ -12,17 +12,20 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  margin-bottom: 20px;
+
   h1 {
     margin: 0;
     margin-bottom: 19px;
   }
+
   @media ${device.laptop} {
     align-items: center;
     padding-top: 0;
+
     span {
       margin-left: 25px;
     }
+
     h1 {
       margin-bottom: 0;
     }
