@@ -8,6 +8,16 @@ const ListItem = styled.div`
   text-align: left;
   margin-top: 16px;
   cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+`;
+
+const Price = styled.div`
+  font-size: 14px;
+  line-height: 20px;
+  color: #6d7173;
+  font-weight: 400;
 `;
 
 const Product = ({ data, data: { assets } }) => {
@@ -18,10 +28,10 @@ const Product = ({ data, data: { assets } }) => {
     <ListItem>
       <Image src={url} alt={data.slug} />
       {data.title}
-      <div>
+      <Price>
         <span>$</span>
         {data.unitPrice}
-      </div>
+      </Price>
     </ListItem>
   );
 };

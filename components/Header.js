@@ -7,7 +7,7 @@ import { device } from './GlobalStyles/Utils/device';
 import useViewport from './GlobalStyles/Utils/useViewport';
 
 const StyledHeader = styled.header`
-  background: black;
+  background: #121212;
   color: white;
   padding-top: 20px;
   display: flex;
