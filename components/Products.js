@@ -9,6 +9,15 @@ const Center = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
   grid-gap: 7px;
 `;
+const ListInfo = styled.div`
+  padding-top: 32px;
+  h4 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    margin: 0;
+  }
+`;
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -20,12 +29,15 @@ export default function Page() {
 
   if (error) return <div>failed to load</div>;
   if (!data) return <div>loading...</div>;
+
   return (
     <>
       {data.aisle.groups.map((group, index) => (
         <>
-          <h3 key={group.id}>{group.name}</h3>
-          <Center>
+          <ListInfo key={index}>
+            <h4 key={group.id}>{group.name}</h4>
+          </ListInfo>
+          <Center key={group.category_id}>
             {group.products.map((product) => (
               <Product data={product} key={product.id} />
             ))}
