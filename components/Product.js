@@ -10,7 +10,7 @@ const ListItem = styled.div`
 `;
 
 const Product = ({ data, data: { assets } }) => {
-  // Ran into issues with loader for Next. js created a custom image component
+  // Ran into issues with loader for Next.js created a custom image component
   const url = assets.map((image) => image.url);
 
   return (
@@ -26,7 +26,7 @@ const Product = ({ data, data: { assets } }) => {
 };
 
 Product.propTypes = {
-  data: PropTypes.string,
+  data: PropTypes.object,
 };
 
 export default Product;
