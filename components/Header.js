@@ -51,6 +51,7 @@ const BasketContainer = styled.div`
 `;
 
 const Header = () => {
+  // Using viewport hook to check viewport width
   const viewport = useViewport();
 
   return (
@@ -58,6 +59,7 @@ const Header = () => {
       <StyledHeader>
         {viewport.width >= parseInt(size.laptop) ? (
           <>
+            {/* Omitting Link tags as this is for one page only */}
             <DesktopButtons>
               <span>Stories</span>
               <span>Contact Us</span>
@@ -68,6 +70,8 @@ const Header = () => {
         )}
 
         <h1>
+          {/* All images are SVG's and imported via @svgr 
+						if I had more time would of loved to animate the logo */}
           <Logo />
         </h1>
         <BasketContainer>
