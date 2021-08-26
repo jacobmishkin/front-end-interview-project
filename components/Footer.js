@@ -40,6 +40,7 @@ const TermsContainer = styled.div`
 const Footer = () => (
   <FooterContainer>
     <WrapperIcon>
+      {/* added <Link /> here for examples due to this demo not linking wanted to show at one place how it can work */}
       <Link href="/">
         <a>
           <Blog />
