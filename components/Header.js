@@ -70,7 +70,7 @@ const Header = () => {
         )}
 
         <h1>
-          {/* All images are SVG's and imported via @svgr 
+          {/* All images are SVG's and imported via @svgr Please note that all SVG's have <title> <desc> for a11y
 						if I had more time would of loved to animate the logo */}
           <Logo />
         </h1>
