@@ -28,7 +28,7 @@ export default function Page() {
   return (
     <>
       {data.aisle.groups.map((group, index) => (
-        <>
+        <div key={index}>
           <ListInfo key={index}>
             <h4 key={group.id}>{group.name}</h4>
           </ListInfo>
@@ -37,7 +37,7 @@ export default function Page() {
               <Product data={product} key={product.id} />
             ))}
           </Center>
-        </>
+        </div>
       ))}
     </>
   );
