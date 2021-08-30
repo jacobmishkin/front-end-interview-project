@@ -23,7 +23,7 @@ const ListInfo = styled.div`
   }
 `;
 
-export default function Page() {
+export default function Products() {
   const { data, isLoading, isError } = useData();
 
   if (isError) return <div>failed to load</div>;
